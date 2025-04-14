@@ -1,2 +1,7 @@
 pdpservice.json
 pdp-public-key
+.env
+
+# Data
+data/*
+!data/.gitkeep

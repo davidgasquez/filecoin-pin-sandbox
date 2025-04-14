@@ -3,4 +3,4 @@ generate-keys:
 	pdptool create-service-secret | tail -n 5 > pdp-public-key
 
 ping:
-	pdptool ping --service-url https://yablu.net --service-name pdp-tippy
+	pdptool ping --service-url $(SERVICE_URL) --service-name $(SERVICE_NAME)
