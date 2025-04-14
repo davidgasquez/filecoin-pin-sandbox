@@ -6,7 +6,15 @@ This is a sandbox repository to explore Filecoin's Proof of Data Possession. You
 
 ## Quickstart
 
-Let's upload your first file to Filecoin PDP. Start by adding a file.
+Let's upload your first file to Filecoin PDP! You'll need some environment variables.
+
+```bash
+export SERVICE_URL=https://yablu.net
+export SERVICE_NAME=pdp-sandbox
+export RECORD_KEEPER=0x0000000000000000000000000000000000000000
+```
+
+Now we can add a file.
 
 ```bash
 pdptool upload-file --service-url $SERVICE_URL --service-name $SERVICE_NAME data/awesome.png
@@ -18,7 +26,7 @@ The `upload-file` command output is the `$ROOT`.
 Then, get a proof set ID.
 
 ```bash
-pdptool create-proof-set --service-url $SERVICE_URL --service-name $SERVICE_NAME --recordkeeper $RECORDKEEPER
+pdptool create-proof-set --service-url $SERVICE_URL --service-name $SERVICE_NAME --recordkeeper $RECORD_KEEPER
 ```
 
 It'll give you a transaction hash. You can monitor the creation with:
