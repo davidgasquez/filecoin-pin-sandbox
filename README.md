@@ -7,6 +7,8 @@ This is a sandbox repository to explore Filecoin's Proof of Data Possession. You
 ## Resources
 
 - [PDP Getting Started Guide](https://docs.google.com/document/d/1EDIIFJEfOTFuw1WEC2WcJdVaZ9agNUHKEqTCtJPVMCA)
+- [PDP Explorer](https://calibration.pdp-explorer.eng.filoz.org/)
+- [PDP Contracts](https://github.com/FilOzone/pdp?tab=readme-ov-file#contracts)
 
 ## License
 
