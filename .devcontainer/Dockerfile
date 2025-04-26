@@ -13,7 +13,7 @@ ENV PATH="/usr/local/go/bin:${PATH}"
 
 # Install pdptool
 RUN git clone https://github.com/filecoin-project/curio.git /tmp/curio \
-    && cd /tmp/curio && git checkout feat/pdp && cd cmd/pdptool && go build . \
+    && cd /tmp/curio && cd cmd/pdptool && go build . \
     && mkdir -p /usr/local/bin \
     && cp /tmp/curio/cmd/pdptool/pdptool /usr/local/bin/ \
     && rm -rf /tmp/curio
