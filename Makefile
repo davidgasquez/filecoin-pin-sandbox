@@ -1,6 +1,9 @@
-.PHONY: generate-keys
-generate-keys:
-	pdptool create-service-secret | tail -n 5 > pdp-public-key
+.PHONY: versions
 
-ping:
-	pdptool ping --service-url $(SERVICE_URL) --service-name $(SERVICE_NAME)
+versions:
+	node --version
+	npm --version
+	filecoin-pin --version
+	gh --version
+	ipfs-car --version
+	cast --version
